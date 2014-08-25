@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.anim {
+		background: url('run.png') 0px 0px no-repeat;
+		height: 210px;
+		width: 140px;
+		display: inline-block;
+	}
+	.animation .anim-stepend {
+		-webkit-animation: run .9s step-end infinite;
+		-moz-animation: run .9s step-end infinite;
+	}
+	@-webkit-keyframes run {
+		0% {background-position: 0 0;}
+		100% {background-position: -3920px 0;}
+	}
+	@-moz-keyframes run {
+		0% {background-position: 0 0;}
+		100% {background-position: -3920px 0;}
+	}
+
+	.animation .anim-stepstart {
+		-webkit-animation: run .9s step-start infinite;
+		-moz-animation: run .9s step-start infinite;
+	}
+	@-webkit-keyframes run {
+		0% {background-position: 0 0;}
+		100% {background-position: -3920px 0;}
+	}
+	@-moz-keyframes run {
+		0% {background-position: 0 0;}
+		100% {background-position: -3920px 0;}
+	}
+	
+	.animation .anim-end {
+		-webkit-animation: run .9s steps(28, end) infinite;
+		-moz-animation: run .9s steps(28, end) infinite;
+	}
+	@-webkit-keyframes run {
+		0% {background-position: 0 0;}
+		100% {background-position: -3920px 0;}
+	}
+	@-moz-keyframes run {
+		0% {background-position: 0 0;}
+		100% {background-position: -3920px 0;}
+	}
+
+	.animation .anim-start {
+		-webkit-animation: run .9s steps(28, start) infinite;
+		-moz-animation: run .9s steps(28, start) infinite;
+	}
+	@-webkit-keyframes run {
+		0% {background-position: 0 0;}
+		100% {background-position: -3920px 0;}
+	}
+	@-moz-keyframes run {
+		0% {background-position: 0 0;}
+		100% {background-position: -3920px 0;}
+	}
+	</style>
+</head>
+<body>
+	<div class="animation">
+		<div class="anim anim-stepend"></div>
+		<div class="anim anim-stepstart"></div>
+		<div class="anim anim-end"></div>
+		<div class="anim anim-start"></div>
+	</div>
+</body>
+</html>
